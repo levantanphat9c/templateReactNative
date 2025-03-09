@@ -1,4 +1,4 @@
-import {IS_IOS} from '@/constants';
+import {IS_IOS} from '@/Constants';
 import {debounce} from 'lodash';
 import React, {FunctionComponent} from 'react';
 
@@ -28,7 +28,7 @@ export const withPreventDoubleClick = <T,>(
       );
     }
   }
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+
   // @ts-ignore
   PreventDoubleClick.displayName = `withPreventDoubleClick(${
     WrappedComponent.displayName || WrappedComponent.name

@@ -13,6 +13,7 @@ interface IProps
   type?: keyof typeof TEXT_TYPE;
   color?: string;
   parse?: ParseShape[];
+  onPress?: () => void;
 }
 
 const AppText = (props: IProps) => {
@@ -31,7 +32,7 @@ const AppText = (props: IProps) => {
       color,
       ...textStyle[type],
     };
-  }, []);
+  }, [color, style, type]);
 
   const isParse = isNilOrEmpty(parse);
 

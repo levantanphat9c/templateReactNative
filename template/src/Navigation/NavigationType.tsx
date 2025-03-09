@@ -1,6 +1,5 @@
 import {ROUTE_NAME} from './RouteName';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {CompositeScreenProps} from '@react-navigation/native';
 
 export type RootStackParamList = {
   [ROUTE_NAME.BOTTOM_TAB]: undefined;

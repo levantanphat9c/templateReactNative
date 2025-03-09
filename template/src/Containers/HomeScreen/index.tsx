@@ -19,6 +19,7 @@ const HomeScreen = ({
     dispatch(CounterActions.incrementSaga());
   };
 
+  console.log('render HomeScreen');
   return (
     <View style={styles.container}>
       <TouchableOpacity
@@ -33,9 +34,11 @@ const HomeScreen = ({
         <Text>{Config.API_URL}</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={onIncrement}>
+      <TouchableOpacity>
         <Text>Increment</Text>
-        <Text>{value}</Text>
+        <AppText type={'TITLE_1'} color={'red'} onPress={onIncrement}>
+          {value}
+        </AppText>
       </TouchableOpacity>
     </View>
   );
